@@ -1,0 +1,140 @@
+.details-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.form-section {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    width: 40%;
+    height: 60vh;
+    /* background-color: grey; */
+}
+
+.textfield-style,
+label {
+    color: black !important;
+    width: 100%;
+    font-weight: bold;
+}
+
+.MuiOutlinedInput-notchedOutline{
+    border-color: black !important;
+ }
+
+  .css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root {
+    color: black !important;
+    font-weight: bold;
+}
+
+.css-1wc848c-MuiFormHelperText-root {
+    color: black !important;
+    font-weight: 600 !important;
+}
+
+.css-1k4oq0i-MuiPaper-root-MuiPickersPopper-paper {
+    background-color: gray !important;
+}
+
+.css-v7esy.Mui-error {
+    color: black !important;
+}
+
+.css-v7esy {
+    color: black !important;
+}
+
+.error-msg{
+    width: 75%;
+}
+
+.date-style {
+    width: 100%;
+    color: black !important;
+}
+
+.display-details{
+    border-radius: 15px;
+    border: 3px solid;
+    width: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bday-msg{
+    color: darkblue;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.w-75{
+    width: 75%;
+}
+
+@media screen and (min-width:400px) and (max-width:540px) {
+    .form-section{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .w-75{
+        width: 90% !important;
+    }
+
+    .display-details{
+        width: 90%;
+    }
+
+    .error-msg{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .form-section{
+        width: 100%;
+        height: 55vh;
+    }
+
+    .w-75{
+        width: 90% !important;
+    }
+
+    .display-details{
+        width: 90%;
+    }
+
+    .error-msg{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .form-section{
+        width: 60%;
+        height: 48vh !important;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1200px) {
+    .form-section{
+        width: 60%;
+        height: 40vh;
+    }
+
+    .w-75{
+        width: 90% !important;
+    }
+
+    .display-details{
+        width: 60%;
+    }
+
+    .error-msg{
+        width: 90%;
+    }
+}
