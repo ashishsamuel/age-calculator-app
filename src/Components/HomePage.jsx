@@ -4,6 +4,8 @@ import './HomePage.css'
 import { TextField } from '@mui/material';
 import dayjs from 'dayjs';
 import { format } from 'date-fns';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function HomePage() {
     const [name,setName] = useState("")
@@ -108,7 +110,7 @@ setshowUserDetails(false)
         const selectedDate = new Date(dateValue);
         
 if(!name || !country || !dateValue){
-    alert("Please fill the form completely")
+    toast.warning("Please fill the form completely")
   }else{
     setDobValue(format(new Date(dateValue.split("-").toString()),'dd MMM yyyy'))
 
@@ -233,7 +235,7 @@ if(!name || !country || !dateValue){
               </div>
 }
 
-              
+        <ToastContainer position='top-center' theme='colored' autoClose='2000'/> 
         </div>
     </>
   )
